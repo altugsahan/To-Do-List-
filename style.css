@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: chartreuse;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputAreaContainer {
+    display: flex;
+    flex-direction: row;
+    border: 0.2px solid black;
+    border-radius: 8%;
+}
+
+#addItem {
+    cursor: pointer;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.todoParagraph {
+    cursor: pointer;
+    margin: 13px;
+}
+
+#inputArea {
+    width: 20rem;
+    height: 2rem;
+    font-size: medium;
+}
