@@ -27,6 +27,13 @@ let addItem =  document.getElementById("addItem");
             paragraph.innerText = inputArea.value 
             todoContainer.appendChild(paragraph);
             inputArea.value = "";
+            paragraph.classList.add("todoParagraph");
+            paragraph.addEventListener("click", () => {
+            paragraph.style.textDecoration = "line-through";
+        });
+            paragraph.addEventListener("dblclick", () => {
+            todoContainer.removeChild(paragraph);
+        });
         };
     });
 
