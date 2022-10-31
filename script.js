@@ -21,4 +21,13 @@ let addItem =  document.getElementById("addItem");
         });
     });
 
+    inputArea.addEventListener("keypress", function(event){
+        if (event.key === "Enter" & inputArea.value != ""){
+            var paragraph = document.createElement("p");
+            paragraph.innerText = inputArea.value 
+            todoContainer.appendChild(paragraph);
+            inputArea.value = "";
+        };
+    });
+
 
